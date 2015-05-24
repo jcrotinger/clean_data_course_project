@@ -15,7 +15,7 @@ Our course project is to demonstrate the steps of creating a ["tidy data set"][t
 [har-dataset]: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 [tidy-data]: http://vita.had.co.nz/papers/tidy-data.pdf
 
-The deliverables require R script, `run_analysis.R` that, quoting from the [project description][course-project]:
+The project requires an R script, `run_analysis.R` that, quoting from [the project description][course-project]:
 
     1. Merges the training and the test sets to create one data set.
     2. Extracts only the measurements on the mean and standard deviation for each measurement. 
@@ -24,6 +24,12 @@ The deliverables require R script, `run_analysis.R` that, quoting from the [proj
     5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 [course-project]: https://class.coursera.org/getdata-014/human_grading/view/courses/973501/assessments/3/submissions
+
+### Loading the Data
+
+To load the data into R, place the `tidy_data.txt` file in R's working directory and execute:
+
+    test <- read.table("tidy_data.txt", header=TRUE)
 
 ### Repository Contents
 
@@ -49,5 +55,7 @@ The repository includes the following files:
 * [Getting and Cleaning Data Course Project][course-project]
 * [How to share data with a statistician](https://github.com/jtleek/datasharing/blob/master/README.md) by [Jeff Leek](http://jtleek.com).
 * [A tidy data set][tidy-data] by [Hadley Wickham](http://had.co.nz/)
-* [David's personal course project FAQ](https://class.coursera.org/getdata-014/forum/thread?thread_id=30) by [David Hood](https://class.coursera.org/getdata-014/forum/profile?user_id=134866)
+* [David's personal course project FAQ](https://class.coursera.org/getdata-014/forum/thread?thread_id=30) by [David Hood][]
+* [Tidy data and the Assignment](https://class.coursera.org/getdata-014/forum/thread?thread_id=31) by [David Hood][]
 
+[David Hood](https://class.coursera.org/getdata-014/forum/profile?user_id=134866)
