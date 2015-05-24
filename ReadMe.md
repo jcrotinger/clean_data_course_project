@@ -18,11 +18,11 @@ Our course project is to demonstrate the steps of creating a ["tidy data set"][t
 
 The project requires an R script, `run_analysis.R` that, quoting from [the project description][course-project]:
 
-    1. Merges the training and the test sets to create one data set.
-    2. Extracts only the measurements on the mean and standard deviation for each measurement. 
-    3. Uses descriptive activity names to name the activities in the data set
-    4. Appropriately labels the data set with descriptive variable names. 
-    5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+1. Merges the training and the test sets to create one data set.
+2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+3. Uses descriptive activity names to name the activities in the data set
+4. Appropriately labels the data set with descriptive variable names. 
+5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 [course-project]: https://class.coursera.org/getdata-014/human_grading/view/courses/973501/assessments/3/submissions
 
@@ -71,7 +71,7 @@ becomes
 
     BodyGyro.X.Freq.StdDev
 
-Also, a few variables have "BodyBody", which appears to be a mistake and the duplicated "Body" is repaired..
+Also, a few variables have "BodyBody", which appears to be a mistake and the duplicated "Body" is repaired.
 
 `filterFeatures` returns the list of normalized variable names along with a character array that is used when loading the actual data to specify the `colClasses`. Filtering the data on load significantly sped up the load step and also reduces memory use. 
 
