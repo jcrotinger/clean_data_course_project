@@ -1,5 +1,4 @@
-## Code Book
-----
+% Code Book
 #### Data Set Code Book: "Getting and Cleaning Data" Course Project
 
 * TODO: Add description of data in output file
