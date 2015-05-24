@@ -17,7 +17,17 @@ The data is stored in a text file in a space-delimited table. This data can be r
 
     tidy.data <- read.table("tidy_data.txt", header=TRUE)
 
-There are two descriptive variables, the `Subject` and the `Activity`, and 66 average measurement variables. The study included 30 subjected, each engaging in 6 activities. The average measurements are averages taken over the `std` and `mean` measurements from the original data set, averaging over the data grouped by `Subject` and `Activity`. 
+There are two descriptive variables, the `Subject` and the `Activity`, and 66 average measurement variables. The study included 30 subjected, each engaging in 6 activities. 
+
+The average measurements are averages taken over the `std` and `mean` measurements from the original data set, averaging over the data grouped by `Subject` and `Activity`. These measurement variables are named as follows: 
+
+    Measurement.[Coordinate.]Domain.Statistic
+    
+"Measurement" is the particular type of sensor measurement, optionally followed by a coordinate ("X", "Y", or "Z") for vector measurements. 
+"Domain" is "Time" or "Freq" for statistics that are calculated in the time-domain or the frequency (fast-fourier-transform) domain.
+"Statistic" is "Mean" or "StdDev" for the average or the standard deviation of the underlying raw data. 
+
+These names are directly derived from the feature names described in the "features_info.txt" and enumerated in the "features.txt" files of the original data set. 
 
 See the ReadMe.md file for a detailed description of the steps used to derive the resulting data set from the raw data.
 
