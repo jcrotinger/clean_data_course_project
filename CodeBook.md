@@ -1,9 +1,25 @@
 ## Code Book
 ### Data Set Code Book: "Getting and Cleaning Data" Course Project
 
+* TODO: Add description of data in output file
+* TODO: Add description of steps to get from raw data to output file
+
 ### Raw Data
 
 This project works with the [Human Activity Recognition Using Smartphones Dataset][har-project] (data downloadable [here][har-dataset]). The raw data was a given and the details of it's capture are beyond the scope of this project.
+
+[har-project]: https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+[har-dataset]: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+### Tidy Data Summary
+
+The data is stored in a text file in a space-delimited table. This data can be read into R with the following command:
+
+    tidy.data <- read.table("tidy_data.txt", header=TRUE)
+
+There are two descriptive variables, the `Subject` and the `Activity`, and 66 average measurement variables. The study included 30 subjected, each engaging in 6 activities. The average measurements are averages taken over the `std` and `mean` measurements from the original data set, averaging over the data grouped by `Subject` and `Activity`. 
+
+See the ReadMe.md file for a detailed description of the steps used to derive the resulting data set from the raw data.
 
 ### Variables
 
@@ -77,13 +93,4 @@ BodyGyroMag.Freq.Mean | Average Measurement | numeric | normalized and bounded w
 BodyGyroMag.Freq.StdDev | Average Measurement | numeric | normalized and bounded within [-1,1]
 BodyGyroJerkMag.Freq.Mean | Average Measurement | numeric | normalized and bounded within [-1,1]
 BodyGyroJerkMag.Freq.StdDev | Average Measurement | numeric | normalized and bounded within [-1,1]
-
-* TODO: Add link to raw data
-* TODO: Add references to tidy data documentation
-* TODO: Add description of data in output file
-* TODO: Add description of steps to get from raw data to output file
-
-### Raw Data
-
-For this project, I have taken the [Human Activity Recognition Using Smartphones Dataset](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip), analyzed the structure of the data, and created a script, `run_analysis.R`, that processes the dataset and outputs a tidy dataset described below. 
 
