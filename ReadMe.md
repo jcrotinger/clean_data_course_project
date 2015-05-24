@@ -123,7 +123,7 @@ Finally we write the data to a space-delimited text file named `tidy_data.txt`:
 * [Getting and Cleaning Data Course Project][course-project]
 * [How to share data with a statistician](https://github.com/jtleek/datasharing/blob/master/README.md) by [Jeff Leek](http://jtleek.com).
 * [A tidy data set][tidy-data] by [Hadley Wickham](http://had.co.nz/)
-* [David's personal course project FAQ](https://class.coursera.org/getdata-014/forum/thread?thread_id=30) by [David Hood][]
-* [Tidy data and the Assignment](https://class.coursera.org/getdata-014/forum/thread?thread_id=31) by [David Hood][]
+* [David's personal course project FAQ](https://class.coursera.org/getdata-014/forum/thread?thread_id=30) by [David Hood][david-hood]
+* [Tidy data and the Assignment](https://class.coursera.org/getdata-014/forum/thread?thread_id=31) by [David Hood][david-hood]
 
-[David Hood]: (https://class.coursera.org/getdata-014/forum/profile?user_id=134866)
+[david-hood]: (https://class.coursera.org/getdata-014/forum/profile?user_id=134866)
