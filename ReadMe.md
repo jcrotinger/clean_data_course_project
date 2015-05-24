@@ -35,13 +35,78 @@ The repository includes the following files:
 * `filterFeatures.R`: Defines the `filterFeaturs` function that loads the feature list from the raw data and returns a list containing the tidy variable names and a vector of classes that is used to filter the columns when they are loaded. 
 * `normalizeName.R`: Defines the `normalizeName` function that is used in `filterFeatures` to process the raw variable names into R-friendly variable names.
 
-
 ### Loading the Data
 
 To load the data into R, place the `tidy_data.txt` file in R's working directory and execute:
 
     tidy.data <- read.table("tidy_data.txt", header=TRUE)
+
+### Steps
+
+The `run_analysis.R` script proceeds in several steps.
+
+#### Activity Labels
+
+This step satisfies Step 3 of the rubrik.
+
+`loadActivityLabels` is run to load the activities from the original data set's `activity_labels.txt` file. The original data are in upper-case, separated by underscores. These are transformed to pseudo-camel-case, with the understcores retained for readability. I didn't use "." for a seperator as these aren't row or column labels, so they will always be quoted, unlike column names. 
+
+#### Features
+
+This step satisfies Step 4 of the rubrik.
+
+Next the set of variables of interest is calculated by `filterFeatures`. This function finds the features in the original data set that are "mean" or "std" statistics of the raw measurements. 
+
+The original feature names are in the form:
+
+    "([tf])(.*)-(mean|std)\\(\\)(-[XYZ])?"
     
+These are converted to:
+
+    MeasurementName.[Time|Freq][.(X|Y|Z)]?.[Mean|StdDev]
+
+For example
+
+    fBodyGyro-std()-X 
+    
+becomes
+
+    BodyGyro.X.Freq.StdDev
+
+Also, a few variables have "BodyBody", which appears to be a mistake and the duplicated "Body" is repaired..
+
+`filterFeatures` returns the list of normalized variable names along with a character array that is used when loading the actual data to specify the `colClasses`. Filtering the data on load significantly sped up the load step and also reduces memory use. 
+
+#### Building the Data Frames
+
+After the activity labels and features are loaded, the script uses the nested function `loadData` to load the training and test data into two dataframes, `train` and `test`. This is done by creating three dataframes:
+
+* The `Subject` data, read from the appropriate "subject" file (e.g. `test/subject_test.txt`)
+* The `Activity` data, read from the corresponding "y" file (e.g. `test/y_test.txt`)
+* The measurement data, read from the corresponding "X" file (e.g. `test/X_test.txt`)
+
+Care is taken to turn the `Subject` and `Activity` data into factor data. 
+
+We use the filter supplied by `filterFeatures` to only load the "mean" and "std" data, as per Step 2 of the rubrik, and we take care to rename the columns with the tidy-data names.
+
+Finally these dataframes are merged with `cbind` and returned. 
+
+#### Merging and Averaging the data
+
+Finally, as per Step 1, we merge the `test` and `train` datasets. The resulting merged dataframe is "piped" to the grouping and averaging steps required by Step 5. This is quite succinct using `dplyr`:
+
+    tidy.data <-
+        rbind(train, test) %>%
+        group_by(Subject, Activity) %>%
+        summarise_each(funs(mean))
+
+`rbind` does the row-merge of the `train` and `test` datasets, `group_by` performs the required grouping, and `summarise_each` applies the specified function(s) to each variable in the resulting set. 
+
+#### Writing the data
+
+Finally we write the data to a space-delimited text file named `tidy_data.txt`:
+
+    write.table(tidy.data, row.name=FALSE, file="tidy_data.txt")
 
 ### Dependencies
 

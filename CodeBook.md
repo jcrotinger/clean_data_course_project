@@ -32,7 +32,7 @@ These "average measurements" are averages taken over the `std` and `mean` measur
 
 These names are directly derived from the feature names described in the `features_info.txt` and enumerated in the `features.txt` files of the original data set. 
 
-See the ReadMe.md file for a detailed description of the steps used to derive the resulting data set from the raw data.
+See the `ReadMe.md` file for a detailed description of the steps used to derive the resulting data set from the raw data.
 
 ## Variables
 
