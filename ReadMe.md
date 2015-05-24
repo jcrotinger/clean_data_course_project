@@ -2,11 +2,12 @@
 
 ### TL;DR
 
-1. Check out this repository.
-2. Download the raw dataset from [here][har-project] and unzip into the directory with the R source files.
-3. Run R and set the working directory to be the directory with the R source files.
-4. Run the analysis: `source('run_analysis.R')`
-5. View the data: `View(tidy.data)`
+1. Check out this repository. 
+2. Download the raw dataset from [here][har-project] and unzip into working copy of the repository.
+3. From the working copy of the repository, run R.
+4. From R:
+i. Run the analysis: `source('run_analysis.R')`
+ii. View the data: `View(tidy.data)`
 
 ### Table of Contents
 
