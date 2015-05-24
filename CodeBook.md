@@ -1,4 +1,4 @@
-# CodeBook for Coursera "Getting and Cleaning Data" Course Project
+## CodeBook for Coursera "Getting and Cleaning Data" Course Project
 
 * TODO: Add link to raw data
 * TODO: Add references to tidy data documentation
