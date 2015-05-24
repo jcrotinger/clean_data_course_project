@@ -126,4 +126,4 @@ Finally we write the data to a space-delimited text file named `tidy_data.txt`:
 * [David's personal course project FAQ](https://class.coursera.org/getdata-014/forum/thread?thread_id=30) by [David Hood][]
 * [Tidy data and the Assignment](https://class.coursera.org/getdata-014/forum/thread?thread_id=31) by [David Hood][]
 
-[David Hood](https://class.coursera.org/getdata-014/forum/profile?user_id=134866)
+[David Hood]: (https://class.coursera.org/getdata-014/forum/profile?user_id=134866)
