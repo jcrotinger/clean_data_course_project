@@ -1,5 +1,13 @@
 ## Getting and Cleaning Data - Course Project
 
+### TL;DR
+
+1. Check out this repository.
+2. Download the raw dataset from [here][har-project] and unzip into the directory with the R source files.
+3. Run R and set the working directory to be the directory with the R source files.
+4. Run the analysis: `source('run_analysis.R')`
+5. View the data: `View(tidy.data)`
+
 ### Table of Contents
 
 * [Goal](#goal)
@@ -30,7 +38,7 @@ The project requires an R script, `run_analysis.R` that, quoting from [the proje
 
 The repository includes the following files:
 
-* `run_analysis.R`: This script runs the analysis and creates a tidy data set `tidy_data.txt` containing the results. The lion's share of the work is done by a function `loadData` that encapsulates the steps to turn the raw data into a tall data-set that is then manipulated with `dplyr` to create the tidy dataset. This avoids duplication of code for the "test" and "train" data. 
+* `run_analysis.R`: This script runs the analysis and creates a tidy data set `tidy_data.txt` containing the results. Details in [Steps below](#steps). 
 * `loadActivityLabels.R`: Defines a function that is used to load and clean the activity factor labels.
 * `filterFeatures.R`: Defines the `filterFeaturs` function that loads the feature list from the raw data and returns a list containing the tidy variable names and a vector of classes that is used to filter the columns when they are loaded. 
 * `normalizeName.R`: Defines the `normalizeName` function that is used in `filterFeatures` to process the raw variable names into R-friendly variable names.
