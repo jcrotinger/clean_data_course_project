@@ -5,7 +5,7 @@
 
 The repository includes the following files:
 
-* `run_analysis.R`: This script runs the analysis and creates a tidy data set `tidy_data.txt` containing the results. 
+* `run_analysis.R`: This script runs the analysis and creates a tidy data set `tidy_data.txt` containing the results. The lion's share of the work is done by a function `loadData` that encapsulates the steps to turn the raw data into a tall data-set that is then manipulated with `dplyr` to create the tidy dataset. This avoids duplication of code for the "test" and "train" data. 
 * `loadActivityLabels.R`: Defines a function that is used to load and clean the activity factor labels.
 * `filterFeatures.R`: Defines the `filterFeaturs` function that loads the feature list from the raw data and returns a list containing the tidy variable names and a vector of classes that is used to filter the columns when they are loaded. 
 * `normalizeName.R`: Defines the `normalizeName` function that is used in `filterFeatures` to process the raw variable names into R-friendly variable names.
