@@ -20,9 +20,9 @@ The data is stored in a text file in a space-delimited table. This data can be r
 
     tidy.data <- read.table("tidy_data.txt", header=TRUE)
 
-The study included 30 subjects each engaging in 6 activities. The tidy data set focuses on the average and standard deviation statistics for 33 different measurements. The resulting data set has two descriptive variables, the `Subject` and the `Activity`, and 66 average measurement variables.  
+The study included 30 subjects each engaging in 6 activities and the underlying data included numerous statistics for several dozen different measurements. Our study focuses on the measurements that include average and standard deviation statistics, of where there were 33, giving a total of 66 "average measurement" variables in our derived data set.
 
-The average measurements are averages taken over the `std` and `mean` measurements from the original data set, averaging over the data grouped by `Subject` and `Activity`. These measurement variables are named as follows: 
+These "average measurements"" are averages taken over the `std` and `mean` measurements from the original data set, averaging over the data grouped by `Subject` and `Activity`. These measurement variables are named as follows: 
 
     Measurement.[Coordinate.]Domain.Statistic
     
