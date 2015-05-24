@@ -1,8 +1,11 @@
 # Code Book
 _Data Set Code Book: "Getting and Cleaning Data" Course Project_
 
-* TODO: Add description of data in output file
-* TODO: Add description of steps to get from raw data to output file
+### Table of Contents
+
+* [Raw Data](raw-data)
+* [Tidy Data Summary](tidy-data-summary)
+* [Variables](variables)
 
 ### Raw Data
 
