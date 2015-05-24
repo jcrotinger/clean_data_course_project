@@ -1,5 +1,12 @@
 ## Getting and Cleaning Data - Course Project
 
+### Table of Contents
+
+* [Goal][#goal]
+* [Repository Contents][#repository-contents]
+* [Dependencies][#dependencies]
+* [References][#references]
+
 ### Goal
 
 Our course project is to demonstrate the steps of creating a ["tidy data set"][tidy-data] using the [Human Activity Recognition Using Smartphones Dataset][har-project] (data downloadable [here][har-dataset]). 
@@ -18,7 +25,7 @@ The deliverables require R script, `run_analysis.R` that, quoting from the [proj
 
 [course-project]: https://class.coursera.org/getdata-014/human_grading/view/courses/973501/assessments/3/submissions
 
-### Contents
+### Repository Contents
 
 The repository includes the following files:
 
