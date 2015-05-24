@@ -1,8 +1,9 @@
 # Code Book
-|_Data Set Code Book: "Getting and Cleaning Data" Course Project_
-|_Author: James A. Crotinger_
-|_Data: 22-May-2015_
-
+```
+_Data Set Code Book: "Getting and Cleaning Data" Course Project_
+_Author: James A. Crotinger_
+_Data: 22-May-2015_
+```
 ## Table of Contents
 
 * [Raw Data](raw-data)
