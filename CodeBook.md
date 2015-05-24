@@ -22,13 +22,13 @@ The data is stored in a text file in a space-delimited table. This data can be r
 
 The study included 30 subjects each engaging in 6 activities and the underlying data included numerous statistics for several dozen different measurements. Our study focuses on the measurements that include average and standard deviation statistics, of where there were 33, giving a total of 66 "average measurement" variables in our derived data set.
 
-These "average measurements"" are averages taken over the `std` and `mean` measurements from the original data set, averaging over the data grouped by `Subject` and `Activity`. These measurement variables are named as follows: 
+These "average measurements" are averages taken over the `std` and `mean` measurements from the original data set, averaging over the data grouped by `Subject` and `Activity`. These measurement variables are named as follows: 
 
     Measurement.[Coordinate.]Domain.Statistic
     
-"Measurement" is the particular type of sensor measurement, optionally followed by a coordinate ("X", "Y", or "Z") for vector measurements. 
-"Domain" is "Time" or "Freq" for statistics that are calculated in the time-domain or the frequency (fast-fourier-transform) domain.
-"Statistic" is "Mean" or "StdDev" for the average or the standard deviation of the underlying raw data. 
+`Measurement` is the particular type of sensor measurement, optionally followed by a coordinate (`X`, `Y`, or `Z`) for vector measurements. 
+`Domain` is "Time" or "Freq" for statistics that are calculated in the time-domain or the frequency (fast-fourier-transform) domain.
+`Statistic` is "Mean" or "StdDev" for the average or the standard deviation of the underlying raw data. 
 
 These names are directly derived from the feature names described in the `features_info.txt` and enumerated in the `features.txt` files of the original data set. 
 
