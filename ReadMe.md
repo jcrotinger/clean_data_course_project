@@ -4,6 +4,7 @@
 
 * [Goal](#goal)
 * [Repository Contents](#repository-contents)
+* [Loading the Data](#loading-the-data)
 * [Dependencies](#dependencies)
 * [References](#references)
 
@@ -25,12 +26,6 @@ The project requires an R script, `run_analysis.R` that, quoting from [the proje
 
 [course-project]: https://class.coursera.org/getdata-014/human_grading/view/courses/973501/assessments/3/submissions
 
-### Loading the Data
-
-To load the data into R, place the `tidy_data.txt` file in R's working directory and execute:
-
-    test <- read.table("tidy_data.txt", header=TRUE)
-
 ### Repository Contents
 
 The repository includes the following files:
@@ -39,6 +34,14 @@ The repository includes the following files:
 * `loadActivityLabels.R`: Defines a function that is used to load and clean the activity factor labels.
 * `filterFeatures.R`: Defines the `filterFeaturs` function that loads the feature list from the raw data and returns a list containing the tidy variable names and a vector of classes that is used to filter the columns when they are loaded. 
 * `normalizeName.R`: Defines the `normalizeName` function that is used in `filterFeatures` to process the raw variable names into R-friendly variable names.
+
+
+### Loading the Data
+
+To load the data into R, place the `tidy_data.txt` file in R's working directory and execute:
+
+    tidy.data <- read.table("tidy_data.txt", header=TRUE)
+    
 
 ### Dependencies
 
