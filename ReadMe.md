@@ -2,10 +2,10 @@
 
 ### Table of Contents
 
-* [Goal][#goal]
-* [Repository Contents][#repository-contents]
-* [Dependencies][#dependencies]
-* [References][#references]
+* [Goal](#goal)
+* [Repository Contents](#repository-contents)
+* [Dependencies](#dependencies)
+* [References](#references)
 
 ### Goal
 
