@@ -35,8 +35,8 @@ The repository includes the following files:
 * [A tidy data set][tidy-data] by [Hadley Wickham](http://had.co.nz/)
 * [David's personal course project FAQ](https://class.coursera.org/getdata-014/forum/thread?thread_id=30) by [David Hood](https://class.coursera.org/getdata-014/forum/profile?user_id=134866)
 
-[dplyr]: (http://cran.r-project.org/web/packages/dplyr/index.html)      (`dplyr`)
-[hmisc]: (http://cran.r-project.org/web/packages/Hmisc/index.html)      (`Hmisc`)
-[stringr]: (http://cran.r-project.org/web/packages/stringr/index.html)  (`stringr`)
-[tidy-data]: (http://vita.had.co.nz/papers/tidy-data.pdf)               "A Tidy Data Set"
-[course-project]: (https://class.coursera.org/getdata-014/human_grading/view/courses/973501/assessments/3/submissions)
+[dplyr]: http://cran.r-project.org/web/packages/dplyr/index.html      (`dplyr`)
+[hmisc]: http://cran.r-project.org/web/packages/Hmisc/index.html      (`Hmisc`)
+[stringr]: http://cran.r-project.org/web/packages/stringr/index.html  (`stringr`)
+[tidy-data]: http://vita.had.co.nz/papers/tidy-data.pdf               "A Tidy Data Set"
+[course-project]: https://class.coursera.org/getdata-014/human_grading/view/courses/973501/assessments/3/submissions
