@@ -4,10 +4,8 @@
 
 Our course project is to demonstrate the steps of creating a [tidy-data] using the [har-dataset]. 
 
-[har-dataset]: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-               "Human Activity Recognition Using Smartphones Dataset"
-[tidy-data]: http://vita.had.co.nz/papers/tidy-data.pdf
-             "A Tidy Data Set"
+[har-dataset]: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip "Human Activity Recognition Using Smartphones Dataset"
+[tidy-data]: http://vita.had.co.nz/papers/tidy-data.pdf "A Tidy Data Set"
 
 The deliverables require R script, `run_analysis.R` that, quoting from the [project description][course-project]:
 
