@@ -45,13 +45,13 @@ To load the data into R, place the `tidy_data.txt` file in R's working directory
 
 The `run_analysis.R` script proceeds in several steps.
 
-#### Activity Labels
+##### Activity Labels
 
 `loadActivityLabels` is run to load the activities from the original data set's `activity_labels.txt` file. The original data are in upper-case, separated by underscores. These are transformed to pseudo-camel-case, with the understcores retained for readability. I didn't use "." for a seperator as these aren't row or column labels, so they will always be quoted, unlike column names. 
 
 This step satisfies [Step 3](#goal).
 
-#### Features
+##### Features
 
 Next the set of variables of interest is calculated by `filterFeatures`. This function finds the features in the original data set that are "mean" or "std" statistics of the raw measurements. 
 
@@ -77,7 +77,7 @@ Also, a few variables have "BodyBody", which appears to be a mistake and the dup
 
 This step satisfies [Step 4](#goal).
 
-#### Building the Data Frames
+##### Building the Data Frames
 
 After the activity labels and features are loaded, the script uses the nested function `loadData` to load the training and test data into two dataframes, `train` and `test`. This is done by creating three dataframes:
 
@@ -91,7 +91,7 @@ We use the filter supplied by `filterFeatures` to only load the "mean" and "std"
 
 Finally these dataframes are merged with `cbind` and returned. 
 
-#### Merging and Averaging the data
+##### Merging and Averaging the data
 
 Finally, as per [Step 1](#goal), we merge the `test` and `train` datasets. The resulting merged dataframe is "piped" to the grouping and averaging steps required by [Step 5](#goal). This is quite succinct using `dplyr`:
 
@@ -102,7 +102,7 @@ Finally, as per [Step 1](#goal), we merge the `test` and `train` datasets. The r
 
 `rbind` does the row-merge of the `train` and `test` datasets, `group_by` performs the required grouping, and `summarise_each` applies the specified function(s) to each variable in the resulting set. 
 
-#### Writing the data
+##### Writing the data
 
 Finally we write the data to a space-delimited text file named `tidy_data.txt`:
 
