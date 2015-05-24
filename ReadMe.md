@@ -4,8 +4,8 @@
 
 Our course project is to demonstrate the steps of creating a ["tidy data set"][tidy-data] using the [Human Activity Recognition Using Smartphones Dataset][har-dataset]. 
 
-[har-dataset]: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip "Human Activity Recognition Using Smartphones Dataset"
-[tidy-data]: http://vita.had.co.nz/papers/tidy-data.pdf "A Tidy Data Set"
+[har-dataset]: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+[tidy-data]: http://vita.had.co.nz/papers/tidy-data.pdf
 
 The deliverables require R script, `run_analysis.R` that, quoting from the [project description][course-project]:
 
@@ -28,13 +28,13 @@ The repository includes the following files:
 
 ### Dependencies
 
-* [dplyr][]
-* [hmisc][]
-* [stringr][]
+* [`dplyr`][]
+* [`hmisc`][]
+* [`stringr`][]
 
-[dplyr]: http://cran.r-project.org/web/packages/dplyr/index.html      (`dplyr`)
-[hmisc]: http://cran.r-project.org/web/packages/Hmisc/index.html      (`Hmisc`)
-[stringr]: http://cran.r-project.org/web/packages/stringr/index.html  (`stringr`)
+[dplyr]: http://cran.r-project.org/web/packages/dplyr/index.html
+[hmisc]: http://cran.r-project.org/web/packages/Hmisc/index.html
+[stringr]: http://cran.r-project.org/web/packages/stringr/index.html
 
 ### References
 
