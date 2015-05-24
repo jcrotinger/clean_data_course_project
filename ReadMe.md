@@ -10,7 +10,7 @@
 
 ### Goal
 
-Our course project is to demonstrate the steps of creating a ["tidy data set"][tidy-data] using the [Human Activity Recognition Using Smartphones Dataset][har-project] (data downloadable [here][har-dataset]). 
+Our course project is to demonstrate the steps of creating a "tidy data set" (see [this paper][tidy-data]) using the [Human Activity Recognition Using Smartphones Dataset][har-project] (data downloadable [here][har-dataset]). 
 
 [har-project]: https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 [har-dataset]: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
