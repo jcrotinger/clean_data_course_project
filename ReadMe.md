@@ -4,10 +4,11 @@
 
 1. Check out this repository. 
 2. Download the raw dataset from [here][har-project] and unzip into working copy of the repository.
-3. From the working copy of the repository, run R.
-4. From R:
-    i. Run the analysis: `source('run_analysis.R')`
-    ii. View the data: `View(tidy.data)`
+3. From the working copy of the repository, run R. From R...
+4. Run the analysis: `source('run_analysis.R')`
+5. View the data: `View(tidy.data)`
+6. Load the `tidy_data.txt` file: ` test <- read.table("tidy_data.txt", header=TRUE)`
+7. View the data: `View(test)`
 
 ### Table of Contents
 
