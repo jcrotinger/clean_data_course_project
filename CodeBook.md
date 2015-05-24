@@ -1,20 +1,22 @@
 # Code Book
 _Data Set Code Book: "Getting and Cleaning Data" Course Project_
+_Author: James A. Crotinger_
+_Data: 22-May-2015_
 
-### Table of Contents
+## Table of Contents
 
 * [Raw Data](raw-data)
 * [Tidy Data Summary](tidy-data-summary)
 * [Variables](variables)
 
-### Raw Data
+## Raw Data
 
 This project works with the [Human Activity Recognition Using Smartphones Dataset][har-project] (data downloadable [here][har-dataset]). The raw data was a given and the details of it's capture are beyond the scope of this project.
 
 [har-project]: https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 [har-dataset]: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-### Tidy Data Summary
+## Tidy Data Summary
 
 The data is stored in a text file in a space-delimited table. This data can be read into R with the following command:
 
@@ -34,7 +36,7 @@ These names are directly derived from the feature names described in the "featur
 
 See the ReadMe.md file for a detailed description of the steps used to derive the resulting data set from the raw data.
 
-### Variables
+## Variables
 
 Variable | Description | Type | Values
 ---------|-------------|------|--------
