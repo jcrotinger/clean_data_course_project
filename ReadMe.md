@@ -28,9 +28,9 @@ The repository includes the following files:
 
 ### Dependencies
 
-* [`dplyr`][]
-* [`hmisc`][]
-* [`stringr`][]
+* [`dplyr`][dplyr]
+* [`Hmisc`][hmisc]
+* [`stringr`][stringr]
 
 [dplyr]: http://cran.r-project.org/web/packages/dplyr/index.html
 [hmisc]: http://cran.r-project.org/web/packages/Hmisc/index.html
